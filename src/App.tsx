@@ -74,13 +74,6 @@ export default function App() {
               </p>
             </div>
           </div>
-          <div className="flex items-center gap-3">
-            <span className="hidden items-center gap-1.5 rounded-full bg-emerald-50 px-3 py-1 text-xs font-medium text-emerald-700 ring-1 ring-inset ring-emerald-200 sm:inline-flex">
-              <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 af-blink" />
-              Live · synthetic
-            </span>
-            <span className="hidden text-xs text-slate-400 md:inline">seed 42</span>
-          </div>
         </div>
       </header>
 
@@ -129,7 +122,7 @@ export default function App() {
           <section className="space-y-4 lg:col-span-2">
             {selectedAlert ? (
               transfer ? (
-                <TransferCard key={selectedKey} transfer={transfer} />
+                <TransferCard key={`transfer-${selectedKey}`} transfer={transfer} />
               ) : (
                 <div className="rounded-xl border border-slate-200/70 bg-white p-4 text-sm text-slate-500 shadow-sm">
                   No viable transfer found for this alert.
@@ -160,7 +153,7 @@ export default function App() {
             </div>
 
             {selectedStock && (
-              <div key={selectedKey} className="af-rise grid grid-cols-1 gap-4 md:grid-cols-2">
+              <div key={`panels-${selectedKey}`} className="af-rise grid grid-cols-1 gap-4 md:grid-cols-2">
                 <WhatIfControl stock={selectedStock} />
                 <DrugSparkline
                   drugName={selectedStock.drugName}
