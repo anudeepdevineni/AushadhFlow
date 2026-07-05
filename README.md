@@ -4,8 +4,6 @@
 
 AushadhFlow helps a district health officer see, days in advance, which Primary/Community Health Centres (PHCs/CHCs) are about to run out of a critical drug — and proposes a redistribution transfer from a nearby centre holding **surplus stock that is about to expire**. One move prevents a stockout *and* prevents medicine waste.
 
-> Built for the **"Build with AI — Code for Community"** theme. Data is **synthetic** (a simulated rural Telangana district) and generated deterministically, so the demo is identical on every run — no real patient data is involved.
-
 ---
 
 ## The core idea (the "magic moment")
