@@ -83,8 +83,8 @@ export function generateStocks(): DrugStock[] {
       const base = randInt(3, 15);
       const history = makeHistory(base);
       const daily = Math.max(1, Math.round(avg(history)));
-      let units = daily * randInt(20, 45);
-      let expiry = daysFromNow(randInt(120, 400));
+      const units = daily * randInt(20, 45);
+      const expiry = daysFromNow(randInt(120, 400));
 
       stocks.push({
         centreId: centre.id,

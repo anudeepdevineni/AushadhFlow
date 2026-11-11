@@ -12,7 +12,7 @@ import { alertKey, inr, pricePerUnit } from "./lib/util";
 import { IconCross, IconBell, IconAlertTriangle, IconLeaf, IconBox, IconMapPin } from "./components/icons";
 
 export default function App() {
-  // Deterministic synthetic data — generated ONCE and held for the session.
+  // Generate the seeded synthetic data once on mount.
   const [stocks] = useState(() => generateStocks());
   const alerts = useMemo(() => getAlerts(stocks), [stocks]);
 

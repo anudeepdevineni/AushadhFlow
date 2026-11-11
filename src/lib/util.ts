@@ -5,7 +5,7 @@ export const alertKey = (a: Pick<StockoutAlert, "centreId" | "drugName">) =>
   `${a.centreId}::${a.drugName}`;
 
 /**
- * UI-layer illustrative pricing (₹ per unit). Purely synthetic — NOT part of the
+ * UI-layer illustrative pricing (₹ per unit). Synthetic numbers, not part of the
  * engines. Used only to turn "units of expiring stock saved" into a headline
  * rupee figure for the waste-prevented metric. Unknown drugs fall back to a flat rate.
  */

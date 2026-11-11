@@ -5,7 +5,7 @@ import { IconClock } from "./icons";
 
 /**
  * Live "what-if": scale the selected centre's daily consumption and watch its
- * days-to-stockout recompute. Display-only — never mutates the real stocks array,
+ * days-to-stockout recompute. Display only; it never mutates the real stocks array,
  * so the demo baseline stays deterministic.
  */
 export default function WhatIfControl({ stock }: { stock: DrugStock }) {

@@ -23,7 +23,7 @@ export default function TransferCard({ transfer }: { transfer: TransferSuggestio
         </div>
         <span
           className="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-600"
-          title="Engine match score — how well this option balances coverage, expiry and distance"
+          title="Match score: how well this option balances coverage, expiry and distance"
         >
           {matchPct}% match
         </span>
@@ -59,7 +59,7 @@ export default function TransferCard({ transfer }: { transfer: TransferSuggestio
           <p className="text-sm text-emerald-800">
             <span className="font-semibold">Dual payoff:</span> prevents a stockout <em>and</em> saves{" "}
             {transfer.transferUnits} units of {transfer.drugName} from expiring
-            {wasteValue ? <> — about {inr(wasteValue)}</> : null}.
+            {wasteValue ? <> (about {inr(wasteValue)})</> : null}.
           </p>
         </div>
       )}

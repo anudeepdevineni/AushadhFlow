@@ -128,7 +128,7 @@ function buildReasoning(p: {
   );
   if (p.preventsWaste) {
     parts.push(
-      `That stock expires in ${p.expiresIn} days and would otherwise be wasted — so this prevents a stockout AND prevents waste.`
+      `That stock expires in ${p.expiresIn} days and would otherwise go to waste, so this both prevents the stockout and saves the stock.`
     );
   } else {
     parts.push(`${p.fromName} has a healthy surplus to spare.`);
